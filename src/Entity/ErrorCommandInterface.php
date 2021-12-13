@@ -5,14 +5,14 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerSdk\Sdk\Contracts\Entity;
+namespace SprykerSdk\SdkContracts\Entity;
 
-use SprykerSdk\Sdk\Contracts\CommandRunner\CommandResponseInterface;
+use SprykerSdk\SdkContracts\CommandRunner\CommandResponseInterface;
 
 interface ErrorCommandInterface
 {
     /**
-     * @param \SprykerSdk\Sdk\Contracts\CommandRunner\CommandResponseInterface $commandResponse
+     * @param \SprykerSdk\SdkContracts\CommandRunner\CommandResponseInterface $commandResponse
      *
      * @return string
      */

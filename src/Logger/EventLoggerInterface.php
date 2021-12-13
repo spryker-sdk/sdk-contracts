@@ -5,14 +5,14 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerSdk\Sdk\Contracts\Logger;
+namespace SprykerSdk\SdkContracts\Logger;
 
-use SprykerSdk\Sdk\Contracts\Events\EventInterface;
+use SprykerSdk\SdkContracts\Events\EventInterface;
 
 interface EventLoggerInterface
 {
     /**
-     * @param \SprykerSdk\Sdk\Contracts\Events\EventInterface $event
+     * @param \SprykerSdk\SdkContracts\Events\EventInterface $event
      *
      * @return void
      */

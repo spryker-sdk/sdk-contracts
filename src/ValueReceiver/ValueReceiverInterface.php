@@ -5,7 +5,7 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerSdk\Sdk\Contracts\ValueReceiver;
+namespace SprykerSdk\SdkContracts\ValueReceiver;
 
 interface ValueReceiverInterface
 {
@@ -24,7 +24,7 @@ interface ValueReceiverInterface
     public function get(string $key): mixed;
 
     /**
-     * @param \SprykerSdk\Sdk\Contracts\ValueReceiver\ReceiverValueInterface $receiverValue
+     * @param \SprykerSdk\SdkContracts\ValueReceiver\ReceiverValueInterface $receiverValue
      *
      * @return mixed
      */

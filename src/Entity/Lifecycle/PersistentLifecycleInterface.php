@@ -5,12 +5,12 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerSdk\Sdk\Contracts\Entity\Lifecycle;
+namespace SprykerSdk\SdkContracts\Entity\Lifecycle;
 
 interface PersistentLifecycleInterface extends LifecycleInterface
 {
     /**
-     * @return \SprykerSdk\Sdk\Contracts\Entity\Lifecycle\LifecycleEventDataInterface
+     * @return \SprykerSdk\SdkContracts\Entity\Lifecycle\LifecycleEventDataInterface
      */
     public function getRemovedEventData(): LifecycleEventDataInterface;
 }
