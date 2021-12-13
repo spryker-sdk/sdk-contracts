@@ -14,7 +14,7 @@ interface ExecutableCommandInterface extends CommandInterface
     /**
      * @param array<string, mixed> $resolvedValues
      *
-     * @return CommandResponseInterface
+     * @return \SprykerSdk\Sdk\Contracts\CommandRunner\CommandResponseInterface
      */
     public function execute(array $resolvedValues): CommandResponseInterface;
 }

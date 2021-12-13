@@ -22,7 +22,7 @@ interface CommandRunnerInterface
      * @param \SprykerSdk\Sdk\Contracts\Entity\CommandInterface $command
      * @param array<string, mixed> $resolvedValues
      *
-     * @return CommandResponseInterface
+     * @return \SprykerSdk\Sdk\Contracts\CommandRunner\CommandResponseInterface
      */
     public function execute(CommandInterface $command, array $resolvedValues): CommandResponseInterface;
 }

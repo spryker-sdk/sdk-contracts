@@ -24,7 +24,7 @@ interface ValueReceiverInterface
     public function get(string $key): mixed;
 
     /**
-     * @param ReceiverValueInterface $receiverValue
+     * @param \SprykerSdk\Sdk\Contracts\ValueReceiver\ReceiverValueInterface $receiverValue
      *
      * @return mixed
      */

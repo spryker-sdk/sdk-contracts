@@ -12,7 +12,7 @@ use SprykerSdk\Sdk\Contracts\CommandRunner\CommandResponseInterface;
 interface ErrorCommandInterface
 {
     /**
-     * @param CommandResponseInterface $commandResponse
+     * @param \SprykerSdk\Sdk\Contracts\CommandRunner\CommandResponseInterface $commandResponse
      *
      * @return string
      */
