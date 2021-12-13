@@ -7,8 +7,6 @@
 
 namespace SprykerSdk\Sdk\Contracts\ValueReceiver;
 
-use SprykerSdk\Sdk\Core\Appplication\Dto\ReceiverValue;
-
 interface ValueReceiverInterface
 {
     /**
@@ -26,9 +24,9 @@ interface ValueReceiverInterface
     public function get(string $key): mixed;
 
     /**
-     * @param \SprykerSdk\Sdk\Core\Appplication\Dto\ReceiverValue $receiverValue
+     * @param ReceiverValueInterface $receiverValue
      *
      * @return mixed
      */
-    public function receiveValue(ReceiverValue $receiverValue): mixed;
+    public function receiveValue(ReceiverValueInterface $receiverValue): mixed;
 }
