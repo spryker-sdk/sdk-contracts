@@ -19,7 +19,7 @@ interface CommandResponseInterface
      *
      * @return $this
      */
-    public function setIsSuccessful(bool $isSuccessful): static;
+    public function setIsSuccessful(bool $isSuccessful);
 
     /**
      * @return int
@@ -43,5 +43,5 @@ interface CommandResponseInterface
      *
      * @return $this
      */
-    public function setErrorMessage(string $errorMessage): static;
+    public function setErrorMessage(string $errorMessage);
 }
