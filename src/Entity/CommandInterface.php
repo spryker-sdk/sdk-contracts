@@ -28,4 +28,9 @@ interface CommandInterface
      * @return bool
      */
     public function hasStopOnError(): bool;
+
+    /**
+     * @return \SprykerSdk\SdkContracts\Entity\ConverterInterface|null
+     */
+    public function getConverter(): ?ConverterInterface;
 }
