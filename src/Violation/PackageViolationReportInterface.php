@@ -20,12 +20,12 @@ interface PackageViolationReportInterface
     public function getPath(): string;
 
     /**
-     * @return array<\SprykerSdk\SdkContracts\Violation\ViolationInterface>
+     * @return array<\SprykerSdk\SdkContracts\Violation\ViolationReportConverterInterface>>
      */
     public function getViolations(): array;
 
     /**
-     * @return array<string, array<\SprykerSdk\SdkContracts\Violation\ViolationInterface>>
+     * @return array<string, array<\SprykerSdk\SdkContracts\Violation\ViolationReportConverterInterface>>>
      */
     public function getFileViolations(): array;
 }

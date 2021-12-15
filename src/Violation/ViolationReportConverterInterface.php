@@ -7,7 +7,7 @@
 
 namespace SprykerSdk\SdkContracts\Violation;
 
-interface ViolationInterface
+interface ViolationReportConverterInterface
 {
     /**
      * @return string
