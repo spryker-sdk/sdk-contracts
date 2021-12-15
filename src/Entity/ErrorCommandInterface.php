@@ -7,14 +7,10 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
-use SprykerSdk\SdkContracts\CommandRunner\CommandResponseInterface;
-
 interface ErrorCommandInterface
 {
     /**
-     * @param \SprykerSdk\SdkContracts\CommandRunner\CommandResponseInterface $commandResponse
-     *
      * @return string
      */
-    public function getErrorMessage(CommandResponseInterface $commandResponse): string;
+    public function getErrorMessage(): string;
 }
