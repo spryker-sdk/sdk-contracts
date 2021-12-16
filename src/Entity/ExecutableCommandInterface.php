@@ -12,9 +12,9 @@ use SprykerSdk\SdkContracts\CommandRunner\CommandResponseInterface;
 interface ExecutableCommandInterface extends CommandInterface
 {
     /**
-     * @param array<string, mixed> $resolvedValues
+     * @param \SprykerSdk\SdkContracts\Entity\ContextInterface $context
      *
-     * @return \SprykerSdk\SdkContracts\CommandRunner\CommandResponseInterface
+     * @return \SprykerSdk\SdkContracts\Entity\ContextInterface
      */
-    public function execute(array $resolvedValues): CommandResponseInterface;
+    public function execute(ContextInterface $context): ContextInterface;
 }

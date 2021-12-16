@@ -7,6 +7,8 @@
 
 namespace SprykerSdk\SdkContracts\ValueResolver;
 
+use SprykerSdk\SdkContracts\Entity\ContextInterface;
+
 interface ValueResolverInterface
 {
     /**
@@ -34,14 +36,11 @@ interface ValueResolverInterface
      */
     public function getAlias(): ?string;
 
-    /**
-     * @param array<string, mixed> $settingValues
-     * @param bool|false $optional
-     * @param array<string, mixed> $resolvedValues
-     *
-     * @return mixed
-     */
-    public function getValue(array $settingValues, bool $optional = false, array $resolvedValues = []): mixed;
+    public function getValue(
+        ContextInterface $context,
+        array $settingValues,
+        bool $optional = false
+    ): mixed;
 
     /**
      * @return mixed
