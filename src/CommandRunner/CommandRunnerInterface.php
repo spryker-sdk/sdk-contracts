@@ -23,7 +23,7 @@ interface CommandRunnerInterface
      * @param \SprykerSdk\SdkContracts\Entity\CommandInterface $command
      * @param \SprykerSdk\SdkContracts\Entity\ContextInterface $context
      *
-     * @return \SprykerSdk\SdkContracts\CommandRunner\CommandResponseInterface
+     * @return \SprykerSdk\SdkContracts\Entity\ContextInterface
      */
     public function execute(CommandInterface $command, ContextInterface $context): ContextInterface;
 }

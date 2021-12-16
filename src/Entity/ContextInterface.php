@@ -7,7 +7,7 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
-use SprykerSdk\SdkContracts\Report\ViolationReportInterface;
+use SprykerSdk\SdkContracts\Violation\ViolationReportInterface;
 
 interface ContextInterface
 {
@@ -41,7 +41,7 @@ interface ContextInterface
      *
      * @return void
      */
-    public function addRequiredPlaceholder(PlaceholderInterface $placeholder);
+    public function addRequiredPlaceholder(PlaceholderInterface $placeholder): void;
 
     /**
      * @param array<\SprykerSdk\SdkContracts\Entity\PlaceholderInterface> $requiredPlaceholders
@@ -107,12 +107,12 @@ interface ContextInterface
     public function getAvailableStages(): array;
 
     /**
-     * @return array<\SprykerSdk\SdkContracts\Report\ViolationReportInterface>
+     * @return array<\SprykerSdk\SdkContracts\Violation\ViolationReportInterface>
      */
     public function getViolationReports(): array;
 
     /**
-     * @param \SprykerSdk\SdkContracts\Report\ViolationReportInterface $violationReport
+     * @param \SprykerSdk\SdkContracts\Violation\ViolationReportInterface $violationReport
      *
      * @return void
      */
@@ -211,6 +211,8 @@ interface ContextInterface
 
     /**
      * @param array<string> $overwrites
+     *
+     * @return void
      */
     public function setOverwrites(array $overwrites): void;
 }

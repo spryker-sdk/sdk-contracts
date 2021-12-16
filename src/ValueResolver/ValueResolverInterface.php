@@ -36,11 +36,14 @@ interface ValueResolverInterface
      */
     public function getAlias(): ?string;
 
-    public function getValue(
-        ContextInterface $context,
-        array $settingValues,
-        bool $optional = false
-    ): mixed;
+    /**
+     * @param \SprykerSdk\SdkContracts\Entity\ContextInterface $context
+     * @param array $settingValues
+     * @param bool $optional
+     *
+     * @return mixed
+     */
+    public function getValue(ContextInterface $context, array $settingValues, bool $optional = false): mixed;
 
     /**
      * @return mixed

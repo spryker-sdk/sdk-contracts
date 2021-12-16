@@ -7,8 +7,6 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
-use SprykerSdk\SdkContracts\CommandRunner\CommandResponseInterface;
-
 interface ExecutableCommandInterface extends CommandInterface
 {
     /**
