@@ -18,4 +18,11 @@ interface TaggedTaskInterface extends TaskInterface
      * @return bool
      */
     public function hasStopOnError(): bool;
+
+    /**
+     * @param array<string> $tags
+     *
+     * @return $this
+     */
+    public function setTags(array $tags);
 }
