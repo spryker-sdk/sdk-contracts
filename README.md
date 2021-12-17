@@ -9,5 +9,9 @@ For more information on extending the Spryker SDK by implementing the interfaces
 
 ## Installation
 
-Run: `composer require spryker-sdk/sdk-contracts`
+Usually, installation is not necessary on project level as the dependencies using this will have it as a dependency in their "require" section.
+But you can install it using Composer as follows:
 
+```
+composer require spryker-sdk/sdk-contracts
+```
