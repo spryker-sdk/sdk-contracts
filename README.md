@@ -9,16 +9,5 @@ For more information on extending the Spryker SDK by implementing the interfaces
 
 ## Installation
 
-Add to your _composer.json_:
-
-```
-"repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/spryker-sdk/sdk-contracts"
-    }
-]
-```
-
 Run: `composer require spryker-sdk/sdk-contracts`
 
