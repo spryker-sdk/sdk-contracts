@@ -215,4 +215,16 @@ interface ContextInterface
      * @return void
      */
     public function setOverwrites(array $overwrites): void;
+
+    /**
+     * @return array
+     */
+    public function getInputStages(): array;
+
+    /**
+     * @param array $inputStages
+     *
+     * @return void
+     */
+    public function setInputStages(array $inputStages): void;
 }
