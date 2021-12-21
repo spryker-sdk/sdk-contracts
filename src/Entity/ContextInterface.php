@@ -71,19 +71,20 @@ interface ContextInterface
     public function addResolvedValues(string $key, mixed $value): void;
 
     /**
-     * @return array<\SprykerSdk\SdkContracts\Entity\MessageInterface>
+     * @return array<string, \SprykerSdk\SdkContracts\Entity\MessageInterface>
      */
     public function getMessages(): array;
 
     /**
+     * @param string $commandId
      * @param \SprykerSdk\SdkContracts\Entity\MessageInterface $message
      *
      * @return void
      */
-    public function addMessage(MessageInterface $message): void;
+    public function addMessage(string $commandId, MessageInterface $message): void;
 
     /**
-     * @param array<\SprykerSdk\SdkContracts\Entity\MessageInterface> $messages
+     * @param array<string, \SprykerSdk\SdkContracts\Entity\MessageInterface> $messages
      *
      * @return void
      */
@@ -227,4 +228,24 @@ interface ContextInterface
      * @return void
      */
     public function setInputStages(array $inputStages): void;
+
+    /**
+     * @return array<string, int>
+     */
+    public function getExitCodeMap(): array;
+
+    /**
+     * @param array<string, int> $exitCodeMap
+     *
+     * @return void
+     */
+    public function setExitCodeMap(array $exitCodeMap): void;
+
+    /**
+     * @param string $id
+     * @param int $code
+     *
+     * @return void
+     */
+    public function addExitCode(string $id, int $code): void;
 }
