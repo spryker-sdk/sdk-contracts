@@ -68,7 +68,7 @@ interface ContextInterface
      *
      * @return void
      */
-    public function addResolvedValues(string $key, mixed $value);
+    public function addResolvedValues(string $key, mixed $value): void;
 
     /**
      * @return array<\SprykerSdk\SdkContracts\Entity\MessageInterface>
@@ -80,7 +80,7 @@ interface ContextInterface
      *
      * @return void
      */
-    public function addMessage(MessageInterface $message);
+    public function addMessage(MessageInterface $message): void;
 
     /**
      * @param array<\SprykerSdk\SdkContracts\Entity\MessageInterface> $messages
@@ -99,7 +99,7 @@ interface ContextInterface
      *
      * @return void
      */
-    public function addSubTask(TaskInterface $task);
+    public function addSubTask(TaskInterface $task): void;
 
     /**
      * @return array<string>
@@ -116,7 +116,7 @@ interface ContextInterface
      *
      * @return void
      */
-    public function addViolationReport(ViolationReportInterface $violationReport);
+    public function addViolationReport(ViolationReportInterface $violationReport): void;
 
     /**
      * @return int
@@ -217,12 +217,12 @@ interface ContextInterface
     public function setOverwrites(array $overwrites): void;
 
     /**
-     * @return array
+     * @return array<string>
      */
     public function getInputStages(): array;
 
     /**
-     * @param array $inputStages
+     * @param array<string> $inputStages
      *
      * @return void
      */
