@@ -8,6 +8,7 @@
 namespace SprykerSdk\SdkContracts\CommandRunner;
 
 use SprykerSdk\SdkContracts\Entity\CommandInterface;
+use SprykerSdk\SdkContracts\Entity\ContextInterface;
 
 interface CommandRunnerInterface
 {
@@ -20,9 +21,9 @@ interface CommandRunnerInterface
 
     /**
      * @param \SprykerSdk\SdkContracts\Entity\CommandInterface $command
-     * @param array<string, mixed> $resolvedValues
+     * @param \SprykerSdk\SdkContracts\Entity\ContextInterface $context
      *
-     * @return \SprykerSdk\SdkContracts\CommandRunner\CommandResponseInterface
+     * @return \SprykerSdk\SdkContracts\Entity\ContextInterface
      */
-    public function execute(CommandInterface $command, array $resolvedValues): CommandResponseInterface;
+    public function execute(CommandInterface $command, ContextInterface $context): ContextInterface;
 }
