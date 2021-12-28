@@ -47,6 +47,11 @@ interface TaskInterface
     public function isDeprecated(): bool;
 
     /**
+     * @return bool
+     */
+    public function isOptional(): bool;
+
+    /**
      * @return string|null
      */
     public function getSuccessor(): ?string;
