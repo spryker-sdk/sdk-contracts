@@ -9,9 +9,24 @@ namespace SprykerSdk\SdkContracts\Violation;
 
 interface ViolationFixInterface
 {
+    /**
+     * @var string
+     */
     public const TYPE_MANUAL = 'manual';
+
+    /**
+     * @var string
+     */
     public const TYPE_PATCH = 'patch';
+
+    /**
+     * @var string
+     */
     public const TYPE_TASK = 'task';
+
+    /**
+     * @var string
+     */
     public const TYPE_REFERENCE = 'reference';
 
     /**

@@ -9,8 +9,19 @@ namespace SprykerSdk\SdkContracts\Violation;
 
 interface ViolationInterface
 {
+    /**
+     * @var string
+     */
     public const SEVERITY_INFO = 'INFO';
+
+    /**
+     * @var string
+     */
     public const SEVERITY_WARNING = 'WARNING';
+
+    /**
+     * @var string
+     */
     public const SEVERITY_ERROR = 'ERROR';
 
     /**
