@@ -7,8 +7,23 @@
 
 namespace SprykerSdk\SdkContracts\Violation;
 
-interface ViolationReportConverterInterface
+interface ViolationInterface
 {
+    /**
+     * @var string
+     */
+    public const SEVERITY_INFO = 'INFO';
+
+    /**
+     * @var string
+     */
+    public const SEVERITY_WARNING = 'WARNING';
+
+    /**
+     * @var string
+     */
+    public const SEVERITY_ERROR = 'ERROR';
+
     /**
      * @return string
      */
@@ -23,6 +38,13 @@ interface ViolationReportConverterInterface
      * @return bool
      */
     public function isFixable(): bool;
+
+    /**
+     * INFO, WARNING, ERROR
+     *
+     * @return string
+     */
+    public function getSeverity(): string;
 
     /**
      * @return string
@@ -68,4 +90,9 @@ interface ViolationReportConverterInterface
      * @return array
      */
     public function getAdditionalAttributes(): array;
+
+    /**
+     * @return \SprykerSdk\SdkContracts\Violation\ViolationFixInterface|null
+     */
+    public function getFix(): ?ViolationFixInterface;
 }
