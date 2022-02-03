@@ -25,7 +25,7 @@ interface ViolationReportInterface
     public function getPath(): string;
 
     /**
-     * @return array<\SprykerSdk\SdkContracts\Violation\ViolationInterface>>
+     * @return array<\SprykerSdk\SdkContracts\Violation\ViolationInterface>
      */
     public function getViolations(): array;
 }
