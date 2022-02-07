@@ -7,8 +7,6 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
-use SprykerSdk\SdkContracts\Entity\Lifecycle\LifecycleInterface;
-
 interface WorkflowInterface
 {
     /**
