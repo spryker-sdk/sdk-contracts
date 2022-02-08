@@ -60,4 +60,9 @@ interface TaskInterface
      * @return \SprykerSdk\SdkContracts\Entity\Lifecycle\LifecycleInterface
      */
     public function getLifecycle(): LifecycleInterface;
+
+    /**
+     * @return array<string>
+     */
+    public function getStages(): array;
 }
