@@ -33,4 +33,9 @@ interface CommandInterface
      * @return \SprykerSdk\SdkContracts\Entity\ConverterInterface|null
      */
     public function getViolationConverter(): ?ConverterInterface;
+
+    /**
+     * @return string
+     */
+    public function getStage(): string;
 }
