@@ -91,23 +91,6 @@ interface ContextInterface
     public function setMessages(array $messages): void;
 
     /**
-     * @return array<\SprykerSdk\SdkContracts\Entity\TaskInterface>
-     */
-    public function getSubTasks(): array;
-
-    /**
-     * @param \SprykerSdk\SdkContracts\Entity\TaskInterface $task
-     *
-     * @return void
-     */
-    public function addSubTask(TaskInterface $task): void;
-
-    /**
-     * @return array<string>
-     */
-    public function getAvailableStages(): array;
-
-    /**
      * @return array<\SprykerSdk\SdkContracts\Violation\ViolationReportInterface>
      */
     public function getViolationReports(): array;
@@ -130,13 +113,6 @@ interface ContextInterface
      * @return void
      */
     public function setExitCode(int $exitCode): void;
-
-    /**
-     * @param array<string> $availableStages
-     *
-     * @return void
-     */
-    public function setAvailableStages(array $availableStages): void;
 
     /**
      * @return array<string>
@@ -185,13 +161,6 @@ interface ContextInterface
      * @return \SprykerSdk\SdkContracts\Entity\TaskInterface
      */
     public function getTask(): TaskInterface;
-
-    /**
-     * @param array<\SprykerSdk\SdkContracts\Entity\TaskInterface> $subTasks
-     *
-     * @return void
-     */
-    public function setSubTasks(array $subTasks): void;
 
     /**
      * @return string
