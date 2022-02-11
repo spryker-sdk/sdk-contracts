@@ -17,11 +17,6 @@ interface ContextInterface
     public const DEFAULT_STAGE = 'default';
 
     /**
-     * @var array<string>
-     */
-    public const DEFAULT_STAGES = [self::DEFAULT_STAGE];
-
-    /**
      * @var int
      */
     public const SUCCESS_EXIT_CODE = 0;
