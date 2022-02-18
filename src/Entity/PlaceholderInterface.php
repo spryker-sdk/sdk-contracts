@@ -20,6 +20,11 @@ interface PlaceholderInterface
     public function getValueResolver(): string;
 
     /**
+     * @return string
+     */
+    public function getStage(): string;
+
+    /**
      * @return array
      */
     public function getConfiguration(): array;
