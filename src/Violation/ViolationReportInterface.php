@@ -7,7 +7,9 @@
 
 namespace SprykerSdk\SdkContracts\Violation;
 
-interface ViolationReportInterface
+use SprykerSdk\SdkContracts\Report\ReportInterface;
+
+interface ViolationReportInterface extends ReportInterface
 {
     /**
      * @return string

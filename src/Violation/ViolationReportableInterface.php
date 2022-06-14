@@ -7,10 +7,12 @@
 
 namespace SprykerSdk\SdkContracts\Violation;
 
-interface ViolationReportableInterface
+use SprykerSdk\SdkContracts\Report\ReportableInterface;
+
+interface ViolationReportableInterface extends ReportableInterface
 {
     /**
      * @return \SprykerSdk\SdkContracts\Violation\ViolationReportInterface|null
      */
-    public function getViolationReport(): ?ViolationReportInterface;
+    public function getReport(): ?ViolationReportInterface;
 }

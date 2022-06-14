@@ -7,7 +7,7 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
-use SprykerSdk\SdkContracts\Violation\ViolationReportInterface;
+use SprykerSdk\SdkContracts\Report\ReportInterface;
 
 interface ContextInterface
 {
@@ -86,16 +86,16 @@ interface ContextInterface
     public function setMessages(array $messages): void;
 
     /**
-     * @return array<\SprykerSdk\SdkContracts\Violation\ViolationReportInterface>
+     * @return array<\SprykerSdk\SdkContracts\Report\ReportInterface>
      */
-    public function getViolationReports(): array;
+    public function getReports(): array;
 
     /**
-     * @param \SprykerSdk\SdkContracts\Violation\ViolationReportInterface $violationReport
+     * @param \SprykerSdk\SdkContracts\Report\ReportInterface $report
      *
      * @return void
      */
-    public function addViolationReport(ViolationReportInterface $violationReport): void;
+    public function addReport(ReportInterface $report): void;
 
     /**
      * @return int
@@ -212,4 +212,16 @@ interface ContextInterface
      * @return void
      */
     public function addExitCode(string $id, int $code): void;
+
+    /**
+     * @return string
+     */
+    public function getFormat(): string;
+
+    /**
+     * @param string $format
+     *
+     * @return void
+     */
+    public function setFormat(string $format): void;
 }
