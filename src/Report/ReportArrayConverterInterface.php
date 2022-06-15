@@ -12,7 +12,7 @@ interface ReportArrayConverterInterface
     /**
      * @return string
      */
-    public function getSupportedReportStringType(): string;
+    public function getSupportedReportType(): string;
 
     /**
      * @return class-string
