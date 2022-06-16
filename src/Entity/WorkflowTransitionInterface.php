@@ -9,37 +9,37 @@ namespace SprykerSdk\SdkContracts\Entity;
 
 use DateTimeInterface;
 
-interface WorkflowEventInterface
+interface WorkflowTransitionInterface
 {
     /**
      * @var string
      */
-    public const EVENT_WORKFLOW_TRANSITION_STARTED = 'transition_started';
+    public const WORKFLOW_TRANSITION_STARTED = 'transition_started';
 
     /**
      * @var string
      */
-    public const EVENT_WORKFLOW_TRANSITION_FINISHED = 'transition_finished';
+    public const WORKFLOW_TRANSITION_FINISHED = 'transition_finished';
 
     /**
      * @var string
      */
-    public const EVENT_NESTED_WORKFLOW_STARTED = 'nested_workflow_entered';
+    public const NESTED_WORKFLOW_STARTED = 'nested_workflow_entered';
 
     /**
      * @var string
      */
-    public const EVENT_NESTED_WORKFLOW_FINISHED = 'nested_workflow_finished';
+    public const NESTED_WORKFLOW_FINISHED = 'nested_workflow_finished';
 
     /**
      * @var string
      */
-    public const EVENT_WORKFLOW_TASK_FAILED = 'task_failed';
+    public const WORKFLOW_TASK_FAILED = 'task_failed';
 
     /**
      * @var string
      */
-    public const EVENT_WORKFLOW_TASK_SUCCEEDED = 'task_succeeded';
+    public const WORKFLOW_TASK_SUCCEEDED = 'task_succeeded';
 
     /**
      * @return \SprykerSdk\SdkContracts\Entity\WorkflowInterface
@@ -59,7 +59,7 @@ interface WorkflowEventInterface
     /**
      * @return string
      */
-    public function getEvent(): string;
+    public function getState(): string;
 
     /**
      * @return array
