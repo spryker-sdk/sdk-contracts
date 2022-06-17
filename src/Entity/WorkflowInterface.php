@@ -23,4 +23,14 @@ interface WorkflowInterface
      * @return string
      */
     public function getWorkflow(): string;
+
+    /**
+     * @return string
+     */
+    public function getCode(): string;
+
+    /**
+     * @return \SprykerSdk\SdkContracts\Entity\WorkflowInterface|null
+     */
+    public function getParent(): ?WorkflowInterface;
 }
