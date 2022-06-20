@@ -14,7 +14,7 @@ interface ReportGeneratorResolverInterface
     /**
      * @param \SprykerSdk\SdkContracts\Entity\ContextInterface $context
      *
-     * @return bool
+     * @return \SprykerSdk\SdkContracts\Report\ReportGeneratorInterface|null
      */
-    public function isShouldBeApplied(ContextInterface $context): bool;
+    public function resolveByContext(ContextInterface $context): ?ReportGeneratorInterface;
 }
