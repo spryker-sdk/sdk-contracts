@@ -9,12 +9,12 @@ namespace SprykerSdk\SdkContracts\Report;
 
 use SprykerSdk\SdkContracts\Entity\ContextInterface;
 
-interface ReportGeneratorFactoryInterface
+interface ReportGeneratorResolverInterface
 {
     /**
      * @param \SprykerSdk\SdkContracts\Entity\ContextInterface $context
      *
-     * @return \SprykerSdk\SdkContracts\Report\ReportGeneratorInterface
+     * @return bool
      */
-    public function getReportGeneratorByContext(ContextInterface $context): ReportGeneratorInterface;
+    public function isShouldBeApplied(ContextInterface $context): bool;
 }
