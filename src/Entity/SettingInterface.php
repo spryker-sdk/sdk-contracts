@@ -27,14 +27,14 @@ interface SettingInterface
     /**
      * @return mixed
      */
-    public function getValues(): mixed;
+    public function getValues();
 
     /**
      * @param mixed $values
      *
      * @return void
      */
-    public function setValues(mixed $values): void;
+    public function setValues($values): void;
 
     /**
      * @return string

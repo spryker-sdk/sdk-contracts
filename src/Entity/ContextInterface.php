@@ -63,7 +63,7 @@ interface ContextInterface
      *
      * @return void
      */
-    public function addResolvedValues(string $key, mixed $value): void;
+    public function addResolvedValues(string $key, $value): void;
 
     /**
      * @return array<string, \SprykerSdk\SdkContracts\Entity\MessageInterface>
