@@ -1,6 +1,13 @@
 <?php
 
+/**
+ * Copyright © 2019-present Spryker Systems GmbH. All rights reserved.
+ * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
+ */
+
 namespace SprykerSdk\SdkContracts\Entity\Telemetry;
+
+use DateTimeImmutable;
 
 interface TelemetryEventInterface
 {
@@ -20,7 +27,7 @@ interface TelemetryEventInterface
     public function synchronizeFailed(): void;
 
     /**
-     * @return TelemetryEventPayloadInterface
+     * @return \SprykerSdk\SdkContracts\Entity\Telemetry\TelemetryEventPayloadInterface
      */
     public function getPayload(): TelemetryEventPayloadInterface;
 
@@ -37,7 +44,7 @@ interface TelemetryEventInterface
     /**
      * @return \DateTimeImmutable
      */
-    public function getCreatedAt(): \DateTimeImmutable;
+    public function getCreatedAt(): DateTimeImmutable;
 
     /**
      * @return int
