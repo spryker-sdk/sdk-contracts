@@ -7,15 +7,10 @@
 
 namespace SprykerSdk\SdkContracts\Violation;
 
-interface ViolationConverterInterface
-{
-    /**
-     * @param array $configuration
-     *
-     * @return void
-     */
-    public function configure(array $configuration): void;
+use SprykerSdk\SdkContracts\Report\ReportConverterInterface;
 
+interface ViolationConverterInterface extends ReportConverterInterface
+{
     /**
      * @return \SprykerSdk\SdkContracts\Violation\ViolationReportInterface|null
      */
