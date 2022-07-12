@@ -32,6 +32,11 @@ interface TelemetryEventInterface
     public function getPayload(): TelemetryEventPayloadInterface;
 
     /**
+     * @return \SprykerSdk\SdkContracts\Entity\Telemetry\TelemetryEventMetadataInterface
+     */
+    public function getMetadata(): TelemetryEventMetadataInterface;
+
+    /**
      * @return int
      */
     public function getSynchronizationAttemptsCount(): int;
@@ -44,10 +49,15 @@ interface TelemetryEventInterface
     /**
      * @return \DateTimeImmutable
      */
-    public function getCreatedAt(): DateTimeImmutable;
+    public function getTriggeredAt(): DateTimeImmutable;
 
     /**
      * @return int
      */
     public function getVersion(): int;
+
+    /**
+     * @return string
+     */
+    public function getScope(): string;
 }

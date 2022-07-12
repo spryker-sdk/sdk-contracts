@@ -7,20 +7,20 @@
 
 namespace SprykerSdk\SdkContracts\Entity\Telemetry;
 
-interface TelemetryEventPayloadInterface
+interface TelemetryEventMetadataInterface
 {
     /**
-     * @return string
+     * @return string|null
      */
-    public static function getEventName(): string;
+    public function getDeveloperEmail(): ?string;
 
     /**
-     * @return string
+     * @return string|null
      */
-    public static function getEventScope(): string;
+    public function getDeveloperGithubAccount(): ?string;
 
     /**
-     * @return int
+     * @return string|null
      */
-    public static function getEventVersion(): int;
+    public function getProjectName(): ?string;
 }
