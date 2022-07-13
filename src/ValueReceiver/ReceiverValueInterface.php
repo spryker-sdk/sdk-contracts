@@ -17,7 +17,7 @@ interface ReceiverValueInterface
     /**
      * @return mixed
      */
-    public function getDefaultValue(): mixed;
+    public function getDefaultValue();
 
     /**
      * @return string

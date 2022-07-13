@@ -43,12 +43,12 @@ interface ValueResolverInterface
      *
      * @return mixed
      */
-    public function getValue(ContextInterface $context, array $settingValues, bool $optional = false): mixed;
+    public function getValue(ContextInterface $context, array $settingValues, bool $optional = false);
 
     /**
      * @return mixed
      */
-    public function getDefaultValue(): mixed;
+    public function getDefaultValue();
 
     /**
      * @param array $settingValues
