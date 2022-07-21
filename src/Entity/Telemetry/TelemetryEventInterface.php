@@ -24,7 +24,7 @@ interface TelemetryEventInterface
     /**
      * @return void
      */
-    public function synchronizeFailed(): void;
+    public function markSynchronizeFailed(): void;
 
     /**
      * @return \SprykerSdk\SdkContracts\Entity\Telemetry\TelemetryEventPayloadInterface
