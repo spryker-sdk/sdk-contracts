@@ -47,9 +47,11 @@ interface SettingInterface
     public function getType(): string;
 
     /**
-     * @return bool
+     * Possible values ['shared', 'local', 'sdk']
+     *
+     * @return string
      */
-    public function isProject(): bool;
+    public function getSettingType(): string;
 
     /**
      * @return bool
