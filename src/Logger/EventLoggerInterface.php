@@ -7,12 +7,12 @@
 
 namespace SprykerSdk\SdkContracts\Logger;
 
-use SprykerSdk\SdkContracts\Events\EventInterface;
+use SprykerSdk\SdkContracts\Event\EventInterface;
 
 interface EventLoggerInterface
 {
     /**
-     * @param \SprykerSdk\SdkContracts\Events\EventInterface $event
+     * @param \SprykerSdk\SdkContracts\Event\EventInterface $event
      *
      * @return void
      */
