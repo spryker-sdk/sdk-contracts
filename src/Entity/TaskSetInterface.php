@@ -15,4 +15,18 @@ interface TaskSetInterface extends TaskInterface
      * @return array<\SprykerSdk\SdkContracts\Entity\TaskInterface>
      */
     public function getSubTasks(array $tags = []): array;
+
+    /**
+     * Overrides stopOnError sub-tasks command property. Key is sub-task id.
+     *
+     * @return array<string, bool>
+     */
+    public function getSubTasksStopOnErrorMap(): array;
+
+    /**
+     * Overrides tags sub-tasks command property. Key is sub-task id.
+     *
+     * @return array<string, array<string>>
+     */
+    public function getSubTasksTagsMap(): array;
 }
