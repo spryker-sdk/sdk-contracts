@@ -12,6 +12,11 @@ use SprykerSdk\SdkContracts\Entity\ContextInterface;
 interface TransitionResolverInterface
 {
     /**
+     * @return string
+     */
+    public function getName(): string;
+
+    /**
      * @param \SprykerSdk\SdkContracts\Entity\ContextInterface $context
      * @param array $settings
      *
