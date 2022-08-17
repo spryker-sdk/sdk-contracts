@@ -12,11 +12,15 @@ use SprykerSdk\SdkContracts\Entity\ContextInterface;
 interface TransitionResolverInterface
 {
     /**
+     * The resolver name that can be used in workflow configuration.
+     *
      * @return string
      */
     public function getName(): string;
 
     /**
+     * Resolves the next transition name.
+     *
      * @param \SprykerSdk\SdkContracts\Entity\ContextInterface $context
      * @param array $settings
      *
