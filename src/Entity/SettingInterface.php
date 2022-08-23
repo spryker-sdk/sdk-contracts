@@ -7,8 +7,6 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
-use SprykerSdk\Sdk\Core\Domain\Enum\Setting as SettingEnum;
-
 interface SettingInterface
 {
     /**
