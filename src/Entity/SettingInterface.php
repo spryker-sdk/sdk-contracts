@@ -7,6 +7,8 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
+use SprykerSdk\Sdk\Core\Domain\Enum\Setting as SettingEnum;
+
 interface SettingInterface
 {
     /**
@@ -67,4 +69,19 @@ interface SettingInterface
      * @return string|null
      */
     public function getInitializer(): ?string;
+
+    /**
+     * @return bool
+     */
+    public function isProject(): bool;
+
+    /**
+     * @return bool
+     */
+    public function isShared(): bool;
+
+    /**
+     * @return bool
+     */
+    public function isLocal(): bool;
 }
