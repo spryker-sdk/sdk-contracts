@@ -30,6 +30,6 @@
   "scripts": {
     "cs-check": "phpcs --colors -p -s --extensions=php --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/",
     "cs-fix": "phpcbf --colors -p --extensions=php --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/",
-    "stan": "phpstan analyze -l 8 src/"
+    "stan": "phpstan analyze"
   }
 }
