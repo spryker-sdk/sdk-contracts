@@ -12,7 +12,7 @@ interface TaskSetInterface extends TaskInterface
     /**
      * @param array<string> $tags
      *
-     * @return array<\SprykerSdk\SdkContracts\Entity\TaskInterface>
+     * @return array<\SprykerSdk\SdkContracts\Entity\TaskInterface|string>
      */
     public function getSubTasks(array $tags = []): array;
 }
