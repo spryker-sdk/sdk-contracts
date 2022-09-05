@@ -7,17 +7,9 @@
 
 namespace SprykerSdk\SdkContracts\ValueResolver;
 
-/**
- * Short desc.
- */
 interface ConfigurableValueResolverInterface extends ValueResolverInterface
 {
     /**
-     * Specification:
-     * -
-     *
-     * @api
-     *
      * @param array $values
      *
      * @return void
