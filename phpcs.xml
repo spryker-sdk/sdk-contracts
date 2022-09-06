@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ruleset name="Sdk Contracts">
+    <description>
+        Spryker Coding Standard for Project.
+
+        Extends main Spryker Coding Standard.
+        All sniffs in ./Sniffs will be auto loaded
+    </description>
+
+    <rule ref="vendor/spryker/code-sniffer/Spryker/ruleset.xml"/>
+
+    <file>src/</file>
+
+    <exclude-pattern>/Sniffs/*</exclude-pattern>
+
+    <arg name="extensions" value="php" />
+    <arg name="colors"/>
+    <arg value="sp"/>
+
+</ruleset>
