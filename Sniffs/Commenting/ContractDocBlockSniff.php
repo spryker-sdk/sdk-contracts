@@ -8,12 +8,10 @@
 namespace SprykerSdk\Sniffs\Commenting;
 
 use PHP_CodeSniffer\Files\File;
-use PHP_CodeSniffer\Sniffs\Sniff;
+use Spryker\Sniffs\AbstractSniffs\AbstractApiClassDetectionSprykerSniff;
 
-class ContractDocBlockSniff implements Sniff
+class ContractDocBlockSniff extends AbstractApiClassDetectionSprykerSniff
 {
-    use DocBlockTrait;
-
     /**
      * @return mixed[]|void
      */
@@ -59,5 +57,23 @@ class ContractDocBlockSniff implements Sniff
             $dockBlockEndPtr,
             'NotFixableMissedContractSpecification'
         );
+    }
+
+    /**
+     * @param \PHP_CodeSniffer\Files\File $phpcsFile
+     * @param int $stackPointer
+     *
+     * @return int|null
+     */
+    protected function getDocBlockEndPosition(File $phpcsFile, int $stackPointer): ?int
+    {
+        $docCommentOpenerPosition = $phpcsFile->findPrevious(T_DOC_COMMENT_OPEN_TAG, $stackPointer) ?: null;
+        if (!$docCommentOpenerPosition) {
+            return null;
+        }
+
+        $tokens = $phpcsFile->getTokens();
+
+        return $tokens[$docCommentOpenerPosition]['comment_closer'] ?? null;
     }
 }
