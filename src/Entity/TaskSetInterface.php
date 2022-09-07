@@ -16,6 +16,8 @@ interface TaskSetInterface extends TaskInterface
      * Specification:
      * - Gets the list of task set tasks.
      *
+     * @api
+     *
      * @param array<string> $tags
      *
      * @return array<\SprykerSdk\SdkContracts\Entity\TaskInterface|string>
@@ -26,6 +28,8 @@ interface TaskSetInterface extends TaskInterface
      * Specification:
      * - Overrides tags of sub-tasks command property.
      *
+     * @api
+     *
      * @return array<string, array<string>> Key is sub-task id.
      */
     public function getTagsMap(): array;
@@ -33,6 +37,8 @@ interface TaskSetInterface extends TaskInterface
     /**
      * Specification:
      * - Overrides stopOnError of sub-tasks command property.
+     *
+     * @api
      *
      * @return array<string, bool> Key is sub-task id.
      */
@@ -42,6 +48,8 @@ interface TaskSetInterface extends TaskInterface
      * Specification:
      * - Overrides sub-tasks placeholders.
      *
+     * @api
+     *
      * @return array<string, array<string, array>> Key is sub-task id.
      */
     public function getOverridePlaceholdersMap(): array;
@@ -49,6 +57,8 @@ interface TaskSetInterface extends TaskInterface
     /**
      * Specification:
      * - Makes sub-tasks placeholders shared.
+     *
+     * @api
      *
      * @return array<string, array<string, string>> Key is sub-task id.
      */

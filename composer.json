@@ -1,35 +1,35 @@
 {
-  "name": "spryker-sdk/sdk-contracts",
-  "description": "Contracts to extend the Spryker SDK",
-  "type": "library",
-  "license": "proprietary",
-  "prefer-stable": true,
-  "minimum-stability": "dev",
-  "require": {
-    "php": ">= 7.4"
-  },
-  "require-dev": {
-    "phpstan/phpstan": "^1.2",
-    "spryker/code-sniffer": "^0.17.1"
-  },
-  "config": {
-    "optimize-autoloader": true,
-    "preferred-install": {
-      "*": "dist"
+    "name": "spryker-sdk/sdk-contracts",
+    "description": "Contracts to extend the Spryker SDK",
+    "type": "library",
+    "license": "proprietary",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">= 7.4"
     },
-    "sort-packages": true,
-    "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true
+    "require-dev": {
+        "phpstan/phpstan": "^1.2",
+        "spryker/code-sniffer": "^0.17.1"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "SprykerSdk\\SdkContracts\\": "src/"
+        }
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "stan": "phpstan analyze"
     }
-  },
-  "autoload": {
-    "psr-4": {
-      "SprykerSdk\\SdkContracts\\": "src/"
-    }
-  },
-  "scripts": {
-    "cs-check": "phpcs --colors -p -s --extensions=php --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/",
-    "cs-fix": "phpcbf --colors -p --extensions=php --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/",
-    "stan": "phpstan analyze"
-  }
 }
