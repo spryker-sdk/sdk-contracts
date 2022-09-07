@@ -7,10 +7,14 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
+/**
+ * Defines the task set that can be used as a single task.
+ */
 interface TaskSetInterface extends TaskInterface
 {
     /**
-     * Gets the list of task set tasks.
+     * Specification:
+     * - Gets the list of task set tasks.
      *
      * @param array<string> $tags
      *
@@ -19,30 +23,34 @@ interface TaskSetInterface extends TaskInterface
     public function getSubTasks(array $tags = []): array;
 
     /**
-     * Overrides tags of sub-tasks command property. Key is sub-task id.
+     * Specification:
+     * - Overrides tags of sub-tasks command property.
      *
-     * @return array<string, array<string>>
+     * @return array<string, array<string>> Key is sub-task id.
      */
     public function getTagsMap(): array;
 
     /**
-     * Overrides stopOnError of sub-tasks command property. Key is sub-task id.
+     * Specification:
+     * - Overrides stopOnError of sub-tasks command property.
      *
-     * @return array<string, bool>
+     * @return array<string, bool> Key is sub-task id.
      */
     public function getStopOnErrorMap(): array;
 
     /**
-     * Overrides sub-tasks placeholders. Key is sub-task id.
+     * Specification:
+     * - Overrides sub-tasks placeholders.
      *
-     * @return array<string, array<string, array>>
+     * @return array<string, array<string, array>> Key is sub-task id.
      */
     public function getOverridePlaceholdersMap(): array;
 
     /**
-     * Makes sub-tasks placeholders shared to avoid command input duplication. Key is sub-task id.
+     * Specification:
+     * - Makes sub-tasks placeholders shared.
      *
-     * @return array<string, array<string, string>>
+     * @return array<string, array<string, string>> Key is sub-task id.
      */
     public function getSharedPlaceholdersMap(): array;
 }
