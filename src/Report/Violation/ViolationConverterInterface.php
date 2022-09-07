@@ -5,14 +5,14 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerSdk\SdkContracts\Violation;
+namespace SprykerSdk\SdkContracts\Report\Violation;
 
 use SprykerSdk\SdkContracts\Report\ReportConverterInterface;
 
 interface ViolationConverterInterface extends ReportConverterInterface
 {
     /**
-     * @return \SprykerSdk\SdkContracts\Violation\ViolationReportInterface|null
+     * @return \SprykerSdk\SdkContracts\Report\Violation\ViolationReportInterface|null
      */
     public function convert(): ?ViolationReportInterface;
 }

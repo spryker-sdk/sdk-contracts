@@ -7,9 +7,18 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
+/**
+ * Provides interface for task set definition.
+ */
 interface TaskSetInterface extends TaskInterface
 {
     /**
+     * Specification:
+     * - Returns task collcection.
+     * - The list can have reference to the task.
+     *
+     * @api
+     *
      * @param array<string> $tags
      *
      * @return array<\SprykerSdk\SdkContracts\Entity\TaskInterface|string>

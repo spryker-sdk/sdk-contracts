@@ -5,7 +5,7 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerSdk\SdkContracts\Violation;
+namespace SprykerSdk\SdkContracts\Report\Violation;
 
 use SprykerSdk\SdkContracts\Report\ReportArrayConverterInterface;
 
@@ -14,7 +14,7 @@ interface ViolationReportArrayConverterInterface extends ReportArrayConverterInt
     /**
      * @param array $arrayData
      *
-     * @return \SprykerSdk\SdkContracts\Violation\ViolationReportInterface
+     * @return \SprykerSdk\SdkContracts\Report\Violation\ViolationReportInterface
      */
     public function fromArray(array $arrayData): ViolationReportInterface;
 }

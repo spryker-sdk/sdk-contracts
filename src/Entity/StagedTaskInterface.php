@@ -7,9 +7,17 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
+/**
+ * Provides interface for staged task.
+ */
 interface StagedTaskInterface extends TaskInterface
 {
     /**
+     * Specification:
+     * - Returns task stage.
+     *
+     * @api
+     *
      * @return string
      */
     public function getStage(): string;

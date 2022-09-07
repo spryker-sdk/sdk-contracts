@@ -5,7 +5,7 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerSdk\SdkContracts\Violation;
+namespace SprykerSdk\SdkContracts\Report\Violation;
 
 interface ViolationInterface
 {
@@ -92,7 +92,7 @@ interface ViolationInterface
     public function getAdditionalAttributes(): array;
 
     /**
-     * @return \SprykerSdk\SdkContracts\Violation\ViolationFixInterface|null
+     * @return \SprykerSdk\SdkContracts\Report\Violation\ViolationFixInterface|null
      */
     public function getFix(): ?ViolationFixInterface;
 }

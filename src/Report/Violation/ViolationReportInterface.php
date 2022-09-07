@@ -5,7 +5,7 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerSdk\SdkContracts\Violation;
+namespace SprykerSdk\SdkContracts\Report\Violation;
 
 use SprykerSdk\SdkContracts\Report\ReportInterface;
 
@@ -17,7 +17,7 @@ interface ViolationReportInterface extends ReportInterface
     public function getProject(): string;
 
     /**
-     * @return array<\SprykerSdk\SdkContracts\Violation\PackageViolationReportInterface>
+     * @return array<\SprykerSdk\SdkContracts\Report\Violation\PackageViolationReportInterface>
      */
     public function getPackages(): array;
 
@@ -27,7 +27,7 @@ interface ViolationReportInterface extends ReportInterface
     public function getPath(): string;
 
     /**
-     * @return array<\SprykerSdk\SdkContracts\Violation\ViolationInterface>
+     * @return array<\SprykerSdk\SdkContracts\Report\Violation\ViolationInterface>
      */
     public function getViolations(): array;
 }

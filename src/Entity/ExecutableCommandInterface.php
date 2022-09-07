@@ -7,9 +7,17 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
+/**
+ * Provides interface for executable command with php type.
+ */
 interface ExecutableCommandInterface extends CommandInterface
 {
     /**
+     * Specification:
+     * - Executes command method.
+     *
+     * @api
+     *
      * @param \SprykerSdk\SdkContracts\Entity\ContextInterface $context
      *
      * @return \SprykerSdk\SdkContracts\Entity\ContextInterface
