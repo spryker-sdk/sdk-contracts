@@ -7,8 +7,6 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
-use SprykerSdk\SdkContracts\Report\ReportInterface;
-
 /**
  * Provides context information structure that shared between tasks.
  */

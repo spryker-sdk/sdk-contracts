@@ -26,7 +26,7 @@ interface ViolationReportInterface extends ReportInterface
 
     /**
      * Specification:
-     * - Returns  package list with violations.
+     * - Returns package list with violations.
      *
      * @api
      *
