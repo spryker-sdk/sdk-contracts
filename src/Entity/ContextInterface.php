@@ -124,6 +124,8 @@ interface ContextInterface
      * - Returns exist codes for each command.
      * - Structure: commandName:code
      *
+     * @api
+     *
      * @return array<string, int>
      */
     public function getExitCodeMap(): array;
@@ -132,6 +134,8 @@ interface ContextInterface
      * Specification:
      * - Adds exist codes for command.
      * - Structure: commandName:code
+     *
+     * @api
      *
      * @param string $id
      * @param int $code
