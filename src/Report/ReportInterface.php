@@ -7,6 +7,9 @@
 
 namespace SprykerSdk\SdkContracts\Report;
 
+/**
+ * Provides abstract report interface.
+ */
 interface ReportInterface
 {
 }

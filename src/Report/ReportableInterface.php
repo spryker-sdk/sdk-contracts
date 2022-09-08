@@ -7,9 +7,17 @@
 
 namespace SprykerSdk\SdkContracts\Report;
 
+/**
+ * Provides report structure.
+ */
 interface ReportableInterface
 {
     /**
+     * Specification:
+     * - Returns a abstract report.
+     *
+     * @api
+     *
      * @return \SprykerSdk\SdkContracts\Report\ReportInterface|null
      */
     public function getReport(): ?ReportInterface;

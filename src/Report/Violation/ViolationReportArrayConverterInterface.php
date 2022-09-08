@@ -9,9 +9,17 @@ namespace SprykerSdk\SdkContracts\Report\Violation;
 
 use SprykerSdk\SdkContracts\Report\ReportArrayConverterInterface;
 
+/**
+ * Provides posibility for convert data to a violation report.
+ */
 interface ViolationReportArrayConverterInterface extends ReportArrayConverterInterface
 {
     /**
+     * Specification:
+     * - Maps report data to the violation report object.
+     *
+     * @api
+     *
      * @param array $arrayData
      *
      * @return \SprykerSdk\SdkContracts\Report\Violation\ViolationReportInterface

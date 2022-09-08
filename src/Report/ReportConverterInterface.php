@@ -7,9 +7,17 @@
 
 namespace SprykerSdk\SdkContracts\Report;
 
+/**
+ * Provides report convertor functionality.
+ */
 interface ReportConverterInterface
 {
     /**
+     * Specification:
+     * - Provides configuration for a convertor.
+     *
+     * @api
+     *
      * @param array $configuration
      *
      * @return void
@@ -17,6 +25,11 @@ interface ReportConverterInterface
     public function configure(array $configuration): void;
 
     /**
+     * Specification:
+     * - Convert sniffer report data to the report.
+     *
+     * @api
+     *
      * @return \SprykerSdk\SdkContracts\Report\ReportInterface|null
      */
     public function convert(): ?ReportInterface;
