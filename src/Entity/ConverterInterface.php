@@ -33,14 +33,4 @@ interface ConverterInterface
      * @return array<string, mixed>
      */
     public function getConfiguration(): array;
-
-    /**
-     * Specification:
-     * - Returns violation report.
-     *
-     * @api
-     *
-     * @return \SprykerSdk\SdkContracts\Report\Violation\ViolationReportInterface|null
-     */
-    public function convert(): ?ViolationReportInterface;
 }
