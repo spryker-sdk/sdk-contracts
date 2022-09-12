@@ -7,8 +7,6 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
-use SprykerSdk\SdkContracts\Report\Violation\ViolationReportInterface;
-
 /**
  * Provides convertor structure that shared between tasks.
  */
