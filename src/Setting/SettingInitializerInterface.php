@@ -20,7 +20,7 @@ interface SettingInitializerInterface
 
     /**
      * Specification:
-     * - Defines the initializer name to use it in configuration files.
+     * - Defines the initializer name to use in configuration files.
      *
      * @api
      *
