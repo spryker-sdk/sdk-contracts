@@ -87,6 +87,7 @@ interface TaskInterface
     /**
      * Specification:
      * - Returns `true` if task is optional.
+     * - Returns `false` otherwise.
      *
      * @api
      *
@@ -108,6 +109,7 @@ interface TaskInterface
     /**
      * Specification:
      * - Returns lifecycle for the task.
+     * - See https://github.com/spryker-sdk/sdk/blob/master/docs/lifecycle_management.md.
      *
      * @api
      *

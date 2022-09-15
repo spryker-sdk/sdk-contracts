@@ -14,8 +14,8 @@ interface PlaceholderInterface
 {
     /**
      * Specification:
-     * - Placeholder name.
-     * - Shortcode for replacing values in string command
+     * - Returns a placeholder name.
+     * - See https://github.com/spryker-sdk/sdk/tree/master/docs/value_resolver.md.
      *
      * @api
      *
@@ -35,7 +35,7 @@ interface PlaceholderInterface
 
     /**
      * Specification:
-     * - Returns configuration for Placeholder.
+     * - Returns configuration for a placeholder.
      *
      * @api
      *
@@ -45,7 +45,8 @@ interface PlaceholderInterface
 
     /**
      * Specification:
-     * - Returns `true` if placeholde optional, `false` if it's required.
+     * - Returns `true` if placeholde optional.
+     * - Returns `false` otherwise.
      *
      * @api
      *

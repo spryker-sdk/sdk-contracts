@@ -8,13 +8,13 @@
 namespace SprykerSdk\SdkContracts\Report;
 
 /**
- * Provides report structure.
+ * Interface for receiving reports from the command.
  */
 interface ReportableInterface
 {
     /**
      * Specification:
-     * - Returns a abstract report.
+     * - Returns a report.
      *
      * @api
      *

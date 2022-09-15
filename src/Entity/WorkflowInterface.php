@@ -24,7 +24,7 @@ interface WorkflowInterface
 
     /**
      * Specification:
-     * - Returns workflow transaction statues.
+     * - Returns workflow transaction statuses.
      *
      * @api
      *

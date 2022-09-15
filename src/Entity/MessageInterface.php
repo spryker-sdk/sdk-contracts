@@ -64,7 +64,7 @@ interface MessageInterface
 
     /**
      * Specification:
-     * - Returns verbosity for showing needed level.
+     * - Returns set up verbosity level.
      *
      * @api
      *

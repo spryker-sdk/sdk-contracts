@@ -10,7 +10,9 @@ namespace SprykerSdk\SdkContracts\Entity\Lifecycle;
 /**
  * Provides based interface for Lifecycle.
  *
- * Use this interface for php tasks.
+ * Use this interface for php tasks to stub.
+ *
+ * @see https://github.com/spryker-sdk/sdk/blob/master/docs/lifecycle_management.md
  */
 interface LifecycleInterface
 {

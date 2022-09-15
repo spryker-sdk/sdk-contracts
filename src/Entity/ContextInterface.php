@@ -74,7 +74,7 @@ interface ContextInterface
 
     /**
      * Specification:
-     * - Adds message for showing in the result.
+     * - Adds a message to be shown in the result.
      *
      * @api
      *
@@ -88,7 +88,9 @@ interface ContextInterface
     /**
      * Specification:
      * - Returns exist code.
-     * - Possible values: ContextInterface::SUCCESS_EXIT_CODE, ContextInterface::FAILURE_EXIT_CODE
+     * - Possible values:
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::SUCCESS_EXIT_CODE`.
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::FAILURE_EXIT_CODE`.
      *
      * @api
      *
@@ -99,7 +101,9 @@ interface ContextInterface
     /**
      * Specification:
      * - Sets command execution result.
-     * - Possible values: ContextInterface::SUCCESS_EXIT_CODE, ContextInterface::FAILURE_EXIT_CODE
+     * - Possible values:
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::SUCCESS_EXIT_CODE`.
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::FAILURE_EXIT_CODE`.
      *
      * @api
      *
@@ -111,7 +115,7 @@ interface ContextInterface
 
     /**
      * Specification:
-     * - Returns current task name.
+     * - Returns a current execution task.
      *
      * @api
      *
@@ -122,7 +126,9 @@ interface ContextInterface
     /**
      * Specification:
      * - Returns exist codes for each command.
-     * - Structure: commandName:code
+     * - Possible values:
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::SUCCESS_EXIT_CODE`.
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::FAILURE_EXIT_CODE`.
      *
      * @api
      *
@@ -133,7 +139,9 @@ interface ContextInterface
     /**
      * Specification:
      * - Adds exist codes for command.
-     * - Structure: commandName:code
+     * - Possible values:
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::SUCCESS_EXIT_CODE`.
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::FAILURE_EXIT_CODE`.
      *
      * @api
      *

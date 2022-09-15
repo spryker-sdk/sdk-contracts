@@ -14,8 +14,8 @@ interface TaskSetInterface extends TaskInterface
 {
     /**
      * Specification:
-     * - Returns task collcection.
-     * - The list can have reference to the task.
+     * - Returns task collection.
+     * - The collection can have reference to the task.
      *
      * @api
      *

@@ -34,7 +34,7 @@ interface SettingInterface
 
     /**
      * Specification:
-     * - Returns setting name.
+     * - Returns a setting path name.
      *
      * @api
      *
@@ -66,8 +66,11 @@ interface SettingInterface
 
     /**
      * Specification:
-     * - Returns strategy.
-     * - Supported types SettingInterface::STRATEGY_MERGE, SettingInterface::STRATEGY_REPLACE.
+     * - Returns strategy name.
+     * - Supported name:
+     *      - `\SprykerSdk\SdkContracts\Entity\SettingInterface::STRATEGY_MERGE`: Adds new values to existing ones.
+     *      - `\SprykerSdk\SdkContracts\Entity\SettingInterface::STRATEGY_REPLACE`: Replaces existing value.
+     * - See https://github.com/spryker-sdk/sdk/blob/master/docs/settings.md
      *
      * @api
      *
@@ -98,7 +101,7 @@ interface SettingInterface
 
     /**
      * Specification:
-     * - Setting value has Initializer.
+     * - Setting value has an initializer.
      *
      * @api
      *
@@ -108,7 +111,7 @@ interface SettingInterface
 
     /**
      * Specification:
-     * - Returns Initializer description.
+     * - Returns an initializer description.
      *
      * @api
      *
@@ -118,7 +121,7 @@ interface SettingInterface
 
     /**
      * Specification:
-     * - Returns Initializer name.
+     * - Returns an initializer name.
      *
      * @api
      *
@@ -128,7 +131,8 @@ interface SettingInterface
 
     /**
      * Specification:
-     * - Returns `true` if it's project settings, `false` if it's SDK setting.
+     * - Returns `true` if it's project settings.
+     * - Returns `false` if it's SDK setting.
      *
      * @api
      *
@@ -138,7 +142,8 @@ interface SettingInterface
 
     /**
      * Specification:
-     * - Returns `true` if it's project settings and it's shared. `false` if it's locall setting.
+     * - Returns `true` if it's project settings and it's shared.
+     * - Returns `false` if it's locall setting.
      *
      * @api
      *

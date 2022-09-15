@@ -16,7 +16,7 @@ interface TransitionResolverInterface
 {
     /**
      * Specification:
-     * - The resolver name that can be used in workflow configuration.
+     * - Returns the resolver name to resolve it in workflow.
      *
      * @api
      *

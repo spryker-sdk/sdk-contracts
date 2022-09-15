@@ -14,7 +14,7 @@ interface ExecutableCommandInterface extends CommandInterface
 {
     /**
      * Specification:
-     * - Executes command method.
+     * - Executes a command with `php` type.
      *
      * @api
      *

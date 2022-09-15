@@ -26,7 +26,7 @@ interface ReportConverterInterface
 
     /**
      * Specification:
-     * - Convert sniffer report data to the report.
+     * - Converts report data to the report format.
      *
      * @api
      *

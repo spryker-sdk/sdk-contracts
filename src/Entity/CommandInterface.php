@@ -25,7 +25,7 @@ interface CommandInterface
     /**
      * Specification:
      * - Returns type of command.
-     * - Supporting types: php, local_cli, local_cli_interactive.
+     * - Supporting types: `php`, `local_cli`, `local_cli_interactive`.
      *
      * @api
      *
@@ -45,7 +45,7 @@ interface CommandInterface
 
     /**
      * Specification:
-     * - Returns flag for a stop or continue execution if command failed.
+     * - Returns a flag based on which a task will be stopped or will continue working in case of command failure.
      *
      * @api
      *

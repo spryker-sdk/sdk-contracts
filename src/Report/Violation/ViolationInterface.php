@@ -65,6 +65,7 @@ interface ViolationInterface
     /**
      * Specification:
      * - Returns `true` if error is fixible.
+     * - Returns `false` otherwise.
      *
      * @api
      *
@@ -74,8 +75,11 @@ interface ViolationInterface
 
     /**
      * Specification:
-     * - Returns severety.
-     * - Support severity keys: ViolationInterface::SEVERITY_INFO, ViolationInterface::SEVERITY_WARNING, ViolationInterface::SEVERITY_ERROR.
+     * - Returns severity level.
+     * - Supports severity keys:
+     *      - `\SprykerSdk\SdkContracts\Report\Violation\ViolationInterface::SEVERITY_INFO`.
+     *      - `\SprykerSdk\SdkContracts\Report\Violation\ViolationInterface::SEVERITY_WARNING`.
+     *      - `\SprykerSdk\SdkContracts\Report\Violation\ViolationInterface::SEVERITY_ERROR`.
      *
      * @api
      *

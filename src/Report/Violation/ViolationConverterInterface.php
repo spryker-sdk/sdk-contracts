@@ -16,7 +16,7 @@ interface ViolationConverterInterface extends ReportConverterInterface
 {
     /**
      * Specification:
-     * - Converts sniffer report to the violation report.
+     * - Converts report to the violation report.
      *
      * @api
      *

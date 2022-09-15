@@ -14,7 +14,7 @@ interface ErrorCommandInterface
 {
     /**
      * Specification:
-     * - Returns message.
+     * - Returns an error message.
      *
      * @api
      *
