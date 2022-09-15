@@ -7,70 +7,77 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
-use SprykerSdk\SdkContracts\Report\ReportInterface;
-
+/**
+ * Provides context information structure that shared between tasks.
+ */
 interface ContextInterface
 {
     /**
+     * Specification:
+     * - Default stage name.
+     *
+     * @api
+     *
      * @var string
      */
     public const DEFAULT_STAGE = 'default';
 
     /**
+     * Specification:
+     * - Code for successful command result.
+     *
+     * @api
+     *
      * @var int
      */
     public const SUCCESS_EXIT_CODE = 0;
 
     /**
+     * Specification:
+     * - Code for failed command result.
+     *
+     * @api
+     *
      * @var int
      */
     public const FAILURE_EXIT_CODE = 1;
 
     /**
+     * Specification:
+     * - Returns required placeholders that must be present in resolved values.
+     *
+     * @api
+     *
      * @return array<\SprykerSdk\SdkContracts\Entity\PlaceholderInterface>
      */
     public function getRequiredPlaceholders(): array;
 
     /**
-     * @param \SprykerSdk\SdkContracts\Entity\PlaceholderInterface $placeholder
+     * Specification:
+     * - Returns resolved values.
      *
-     * @return void
-     */
-    public function addRequiredPlaceholder(PlaceholderInterface $placeholder): void;
-
-    /**
-     * @param array<\SprykerSdk\SdkContracts\Entity\PlaceholderInterface> $requiredPlaceholders
+     * @api
      *
-     * @return void
-     */
-    public function setRequiredPlaceholders(array $requiredPlaceholders): void;
-
-    /**
      * @return array<string, mixed>
      */
     public function getResolvedValues(): array;
 
     /**
-     * @param array<string, mixed> $resolvedValues
+     * Specification:
+     * - Returns collected messages during command execution.
      *
-     * @return void
-     */
-    public function setResolvedValues(array $resolvedValues): void;
-
-    /**
-     * @param string $key
-     * @param mixed $value
+     * @api
      *
-     * @return void
-     */
-    public function addResolvedValues(string $key, $value): void;
-
-    /**
      * @return array<string, \SprykerSdk\SdkContracts\Entity\MessageInterface>
      */
     public function getMessages(): array;
 
     /**
+     * Specification:
+     * - Adds a message to be shown in the result.
+     *
+     * @api
+     *
      * @param string $commandId
      * @param \SprykerSdk\SdkContracts\Entity\MessageInterface $message
      *
@@ -79,30 +86,27 @@ interface ContextInterface
     public function addMessage(string $commandId, MessageInterface $message): void;
 
     /**
-     * @param array<string, \SprykerSdk\SdkContracts\Entity\MessageInterface> $messages
+     * Specification:
+     * - Returns exist code.
+     * - Possible values:
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::SUCCESS_EXIT_CODE`.
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::FAILURE_EXIT_CODE`.
      *
-     * @return void
-     */
-    public function setMessages(array $messages): void;
-
-    /**
-     * @return array<\SprykerSdk\SdkContracts\Report\ReportInterface>
-     */
-    public function getReports(): array;
-
-    /**
-     * @param \SprykerSdk\SdkContracts\Report\ReportInterface $report
+     * @api
      *
-     * @return void
-     */
-    public function addReport(ReportInterface $report): void;
-
-    /**
      * @return int
      */
     public function getExitCode(): int;
 
     /**
+     * Specification:
+     * - Sets command execution result.
+     * - Possible values:
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::SUCCESS_EXIT_CODE`.
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::FAILURE_EXIT_CODE`.
+     *
+     * @api
+     *
      * @param int $exitCode
      *
      * @return void
@@ -110,118 +114,41 @@ interface ContextInterface
     public function setExitCode(int $exitCode): void;
 
     /**
-     * @return array<string>
-     */
-    public function getRequiredStages(): array;
-
-    /**
-     * @param array<string> $requiredStages
+     * Specification:
+     * - Returns a current execution task.
      *
-     * @return void
-     */
-    public function setRequiredStages(array $requiredStages): void;
-
-    /**
-     * @param array<string> $tags
+     * @api
      *
-     * @return void
-     */
-    public function setTags(array $tags): void;
-
-    /**
-     * @return array<string>
-     */
-    public function getTags(): array;
-
-    /**
-     * @return bool
-     */
-    public function isDryRun(): bool;
-
-    /**
-     * @param bool $isDryRun
-     *
-     * @return void
-     */
-    public function setIsDryRun(bool $isDryRun = true): void;
-
-    /**
-     * @param \SprykerSdk\SdkContracts\Entity\TaskInterface $task
-     *
-     * @return void
-     */
-    public function setTask(TaskInterface $task): void;
-
-    /**
      * @return \SprykerSdk\SdkContracts\Entity\TaskInterface
      */
     public function getTask(): TaskInterface;
 
     /**
-     * @return string
-     */
-    public function getName(): string;
-
-    /**
-     * @param string $name
+     * Specification:
+     * - Returns exist codes for each command.
+     * - Possible values:
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::SUCCESS_EXIT_CODE`.
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::FAILURE_EXIT_CODE`.
      *
-     * @return void
-     */
-    public function setName(string $name): void;
-
-    /**
-     * @return array<string>
-     */
-    public function getOverwrites(): array;
-
-    /**
-     * @param array<string> $overwrites
+     * @api
      *
-     * @return void
-     */
-    public function setOverwrites(array $overwrites): void;
-
-    /**
-     * @return array<string>
-     */
-    public function getInputStages(): array;
-
-    /**
-     * @param array<string> $inputStages
-     *
-     * @return void
-     */
-    public function setInputStages(array $inputStages): void;
-
-    /**
      * @return array<string, int>
      */
     public function getExitCodeMap(): array;
 
     /**
-     * @param array<string, int> $exitCodeMap
+     * Specification:
+     * - Adds exist codes for command.
+     * - Possible values:
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::SUCCESS_EXIT_CODE`.
+     *      - `SprykerSdk\SdkContracts\Entity\ContextInterface::FAILURE_EXIT_CODE`.
      *
-     * @return void
-     */
-    public function setExitCodeMap(array $exitCodeMap): void;
-
-    /**
+     * @api
+     *
      * @param string $id
      * @param int $code
      *
      * @return void
      */
     public function addExitCode(string $id, int $code): void;
-
-    /**
-     * @return string
-     */
-    public function getFormat(): string;
-
-    /**
-     * @param string $format
-     *
-     * @return void
-     */
-    public function setFormat(string $format): void;
 }

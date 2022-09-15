@@ -7,9 +7,17 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
+/**
+ * Provides error message if command failed.
+ */
 interface ErrorCommandInterface
 {
     /**
+     * Specification:
+     * - Returns an error message.
+     *
+     * @api
+     *
      * @return string
      */
     public function getErrorMessage(): string;
