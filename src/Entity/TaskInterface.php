@@ -97,8 +97,9 @@ interface TaskInterface
 
     /**
      * Specification:
-     * - Returns successor.
-     * - Executes when the task has deprecated.
+     * - Returns successor task id.
+     * - Uses in lifecycle logic.
+     * - See https://github.com/spryker-sdk/sdk/blob/master/docs/lifecycle_management.md.
      *
      * @api
      *
