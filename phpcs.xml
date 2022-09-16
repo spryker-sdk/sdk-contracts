@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="SdkContracts">
+<ruleset name="Sdk Contracts">
     <description>
         Spryker Coding Standard for Project.
 
@@ -10,6 +10,8 @@
     <rule ref="vendor/spryker/code-sniffer/Spryker/ruleset.xml"/>
 
     <file>src/</file>
+
+    <exclude-pattern>/Sniffs/*</exclude-pattern>
 
     <arg name="extensions" value="php" />
     <arg name="colors"/>

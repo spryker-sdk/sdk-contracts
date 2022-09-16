@@ -7,14 +7,27 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
+/**
+ * Provides convertor structure that shared between tasks.
+ */
 interface ConverterInterface
 {
     /**
+     * Specification:
+     * - Returns convertor name.
+     *
+     * @api
+     *
      * @return string
      */
     public function getName(): string;
 
     /**
+     * Specification:
+     * - Returns configuration for convertor.
+     *
+     * @api
+     *
      * @return array<string, mixed>
      */
     public function getConfiguration(): array;

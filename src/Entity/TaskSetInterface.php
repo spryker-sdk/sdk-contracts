@@ -8,13 +8,14 @@
 namespace SprykerSdk\SdkContracts\Entity;
 
 /**
- * Defines the task set that can be used as a single task.
+ * Provides interface for task set definition.
  */
 interface TaskSetInterface extends TaskInterface
 {
     /**
      * Specification:
-     * - Returns the list of task set tasks.
+     * - Returns task collection.
+     * - The collection can have reference to the task.
      *
      * @api
      *
