@@ -14,7 +14,7 @@ interface TaskSetInterface extends TaskInterface
 {
     /**
      * Specification:
-     * - Gets the list of task set tasks.
+     * - Returns the list of task set tasks.
      *
      * @api
      *
@@ -26,7 +26,7 @@ interface TaskSetInterface extends TaskInterface
 
     /**
      * Specification:
-     * - Gets tags map to override sub-tasks tags.
+     * - Returns tags map to override sub-tasks tags.
      *
      * @api
      *
@@ -36,7 +36,7 @@ interface TaskSetInterface extends TaskInterface
 
     /**
      * Specification:
-     * - Gets stopOnError map to override sub-tasks stopOnError property.
+     * - Returns stopOnError map to override sub-tasks stopOnError property.
      *
      * @api
      *
@@ -46,7 +46,7 @@ interface TaskSetInterface extends TaskInterface
 
     /**
      * Specification:
-     * - Gets placeholders map to override sub-tasks placeholders.
+     * - Returns placeholders map to override sub-tasks placeholders.
      *
      * @api
      *
@@ -56,7 +56,7 @@ interface TaskSetInterface extends TaskInterface
 
     /**
      * Specification:
-     * - Get shared placeholders map to make sub-tasks placeholders shared.
+     * - Returns shared placeholders map to make sub-tasks placeholders shared.
      *
      * @api
      *
