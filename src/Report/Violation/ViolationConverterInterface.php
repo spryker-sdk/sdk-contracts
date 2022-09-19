@@ -5,14 +5,22 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerSdk\SdkContracts\Violation;
+namespace SprykerSdk\SdkContracts\Report\Violation;
 
 use SprykerSdk\SdkContracts\Report\ReportConverterInterface;
 
+/**
+ * Provides the method for converting tool report to the structure
+ */
 interface ViolationConverterInterface extends ReportConverterInterface
 {
     /**
-     * @return \SprykerSdk\SdkContracts\Violation\ViolationReportInterface|null
+     * Specification:
+     * - Converts report to the violation report.
+     *
+     * @api
+     *
+     * @return \SprykerSdk\SdkContracts\Report\Violation\ViolationReportInterface|null
      */
     public function convert(): ?ViolationReportInterface;
 }

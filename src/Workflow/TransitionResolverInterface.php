@@ -9,17 +9,26 @@ namespace SprykerSdk\SdkContracts\Workflow;
 
 use SprykerSdk\SdkContracts\Entity\ContextInterface;
 
+/**
+ * Provides transition resolver for a workflow transition.
+ */
 interface TransitionResolverInterface
 {
     /**
-     * The resolver name that can be used in workflow configuration.
+     * Specification:
+     * - Returns the resolver name to resolve it in workflow.
+     *
+     * @api
      *
      * @return string
      */
     public function getName(): string;
 
     /**
-     * Resolves the next transition name.
+     * Specification:
+     * - Resolves the next transition name.
+     *
+     * @api
      *
      * @param \SprykerSdk\SdkContracts\Entity\ContextInterface $context
      * @param array $settings

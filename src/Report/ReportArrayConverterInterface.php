@@ -7,19 +7,37 @@
 
 namespace SprykerSdk\SdkContracts\Report;
 
+/**
+ * Provides functionality to convert sniffer report data to the report object.
+ */
 interface ReportArrayConverterInterface
 {
     /**
+     * Specification:
+     * - Returns report type name.
+     *
+     * @api
+     *
      * @return string
      */
     public function getSupportedReportType(): string;
 
     /**
+     * Specification:
+     * - Returns report class name.
+     *
+     * @api
+     *
      * @return class-string
      */
     public function getSupportedReportClass(): string;
 
     /**
+     * Specification:
+     * - Converts report data to array.
+     *
+     * @api
+     *
      * @param \SprykerSdk\SdkContracts\Report\ReportInterface $report
      *
      * @return array<string, mixed>
@@ -27,6 +45,11 @@ interface ReportArrayConverterInterface
     public function toArray(ReportInterface $report): array;
 
     /**
+     * Specification:
+     * - Converts report array to an report.
+     *
+     * @api
+     *
      * @param array $arrayData
      *
      * @return \SprykerSdk\SdkContracts\Report\ReportInterface

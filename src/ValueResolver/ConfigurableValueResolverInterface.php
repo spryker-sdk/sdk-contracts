@@ -7,9 +7,17 @@
 
 namespace SprykerSdk\SdkContracts\ValueResolver;
 
+/**
+ * Provides additional configuration for placeholder.
+ */
 interface ConfigurableValueResolverInterface extends ValueResolverInterface
 {
     /**
+     * Specification:
+     * - Configurates placeholder by values.
+     *
+     * @api
+     *
      * @param array $values
      *
      * @return void

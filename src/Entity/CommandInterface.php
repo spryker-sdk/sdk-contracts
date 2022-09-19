@@ -7,34 +7,68 @@
 
 namespace SprykerSdk\SdkContracts\Entity;
 
+/**
+ * Provides command for execution in task.
+ */
 interface CommandInterface
 {
     /**
+     * Specification:
+     * - Return string command for cli.
+     *
+     * @api
+     *
      * @return string
      */
     public function getCommand(): string;
 
     /**
+     * Specification:
+     * - Returns type of command.
+     * - Supporting types: `php`, `local_cli`, `local_cli_interactive`.
+     *
+     * @api
+     *
      * @return string
      */
     public function getType(): string;
 
     /**
+     * Specification:
+     * - Returns tags for filtering executable commands.
+     *
+     * @api
+     *
      * @return array<string>
      */
     public function getTags(): array;
 
     /**
+     * Specification:
+     * - Returns a flag based on which a task will be stopped or will continue working in case of command failure.
+     *
+     * @api
+     *
      * @return bool
      */
     public function hasStopOnError(): bool;
 
     /**
+     * Specification:
+     * - Returns a convertor for reports generation.
+     *
+     * @api
+     *
      * @return \SprykerSdk\SdkContracts\Entity\ConverterInterface|null
      */
     public function getConverter(): ?ConverterInterface;
 
     /**
+     * Specification:
+     * - Returns a stage for command group execution.
+     *
+     * @api
+     *
      * @return string
      */
     public function getStage(): string;

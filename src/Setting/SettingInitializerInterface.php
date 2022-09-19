@@ -9,9 +9,17 @@ namespace SprykerSdk\SdkContracts\Setting;
 
 use SprykerSdk\SdkContracts\Entity\SettingInterface;
 
+/**
+ * Provides additional initializer for setting.
+ */
 interface SettingInitializerInterface
 {
     /**
+     * Specification:
+     * - Gives possibiliy to do additional action during init setting.
+     *
+     * @api
+     *
      * @param \SprykerSdk\SdkContracts\Entity\SettingInterface $setting
      *
      * @return void
