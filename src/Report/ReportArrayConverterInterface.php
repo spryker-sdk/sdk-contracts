@@ -46,7 +46,7 @@ interface ReportArrayConverterInterface
 
     /**
      * Specification:
-     * - Converts report array to an report.
+     * - Converts report array to a report.
      *
      * @api
      *

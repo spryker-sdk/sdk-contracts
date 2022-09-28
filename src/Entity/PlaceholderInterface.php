@@ -45,7 +45,7 @@ interface PlaceholderInterface
 
     /**
      * Specification:
-     * - Returns `true` if placeholde optional.
+     * - Returns `true` if placeholder is optional.
      * - Returns `false` otherwise.
      *
      * @api

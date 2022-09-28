@@ -36,7 +36,7 @@ interface ValueResolverInterface
 
     /**
      * Specification:
-     * - Returns setting paths for extractins values from settings.
+     * - Returns setting paths for extraction of values from settings.
      *
      * @api
      *

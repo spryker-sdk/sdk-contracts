@@ -16,7 +16,7 @@ interface SettingInitializerInterface
 {
     /**
      * Specification:
-     * - Gives possibiliy to do additional action during init setting.
+     * - Gives possibility to do additional action during init setting.
      *
      * @api
      *
