@@ -24,7 +24,7 @@ final class Task
     public const TYPE_LOCAL_CLI = 'local_cli';
 
     /**
-     * Local cli task type.
+     * Local task set type for agreggating tasks.
      *
      * @var string
      */
