@@ -12,7 +12,7 @@ final class ValueTypeEnum
     /**
      * @var string
      */
-    public const TYPE_BOOLEAN = 'boolean';
+    public const TYPE_BOOL = 'bool';
 
     /**
      * @var string
@@ -32,5 +32,5 @@ final class ValueTypeEnum
     /**
      * @var string
      */
-    public const TYPE_INTEGER = 'integer';
+    public const TYPE_INT = 'int';
 }
