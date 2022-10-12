@@ -32,5 +32,5 @@ final class ValueTypeEnum
     /**
      * @var string
      */
-    public const TYPE_INT = 'int';
+    public const TYPE_INTEGER = 'integer';
 }

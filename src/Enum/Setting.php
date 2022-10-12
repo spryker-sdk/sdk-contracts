@@ -63,7 +63,7 @@ final class Setting
      *
      * @var string
      */
-    public const PATH_CORE_NAMESPACE = 'coreNamespaces';
+    public const PATH_CORE_NAMESPACES = 'coreNamespaces';
 
     /**
      * Path setting key for report project namespaces.
@@ -77,7 +77,7 @@ final class Setting
      *
      * @var string
      */
-    public const PATH_DEFAULT_VIOLATION_OUTPUT_PATH = 'default_violation_output_format';
+    public const PATH_DEFAULT_VIOLATION_OUTPUT_FORMAT = 'default_violation_output_format';
 
     /**
      * Path setting key for report directory.

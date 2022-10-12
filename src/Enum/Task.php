@@ -14,19 +14,19 @@ final class Task
      *
      * @var string
      */
-    public const TASK_TYPE_LOCAL_CLI_INTERACTIVE = 'local_cli_interactive';
+    public const TYPE_LOCAL_CLI_INTERACTIVE = 'local_cli_interactive';
 
     /**
      * Local cli task type.
      *
      * @var string
      */
-    public const TASK_TYPE_LOCAL_CLI = 'local_cli';
+    public const TYPE_LOCAL_CLI = 'local_cli';
 
     /**
      * Local cli task type.
      *
      * @var string
      */
-    public const TASK_SET_TYPE = 'task_set';
+    public const TYPE_TASK_SET = 'task_set';
 }
