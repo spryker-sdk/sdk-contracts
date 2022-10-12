@@ -8,7 +8,7 @@
 namespace SprykerSdk\SdkContracts\Entity;
 
 /**
- * Provides setting stucture.
+ * Provides setting structure.
  */
 interface SettingInterface
 {
@@ -143,7 +143,7 @@ interface SettingInterface
     /**
      * Specification:
      * - Returns `true` if it's project settings and it's shared.
-     * - Returns `false` if it's locall setting.
+     * - Returns `false` if it's local setting.
      *
      * @api
      *

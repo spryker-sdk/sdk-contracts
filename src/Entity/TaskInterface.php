@@ -76,7 +76,7 @@ interface TaskInterface
 
     /**
      * Specification:
-     * - Returns depricated flag.
+     * - Returns deprecated flag.
      *
      * @api
      *

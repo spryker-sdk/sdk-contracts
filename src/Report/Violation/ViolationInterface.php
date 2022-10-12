@@ -14,7 +14,7 @@ interface ViolationInterface
 {
     /**
      * Specification:
-     * - Severety info key.
+     * - Severity info key.
      *
      * @api
      *
@@ -24,7 +24,7 @@ interface ViolationInterface
 
     /**
      * Specification:
-     * - Severety waring key.
+     * - Severity waring key.
      *
      * @api
      *
@@ -34,7 +34,7 @@ interface ViolationInterface
 
     /**
      * Specification:
-     * - Severety error key.
+     * - Severity error key.
      *
      * @api
      *
@@ -64,7 +64,7 @@ interface ViolationInterface
 
     /**
      * Specification:
-     * - Returns `true` if error is fixible.
+     * - Returns `true` if error is fixable.
      * - Returns `false` otherwise.
      *
      * @api
@@ -179,7 +179,7 @@ interface ViolationInterface
 
     /**
      * Specification:
-     * - Returns proposiotion for the fix.
+     * - Returns proposition for the fix.
      *
      * @api
      *
