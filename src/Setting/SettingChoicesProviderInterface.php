@@ -5,24 +5,24 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerSdk\SdkContracts\Setting;
+namespace src\Setting;
 
 use SprykerSdk\SdkContracts\Entity\SettingInterface;
 
 /**
- * Provides additional initializer for setting.
+ * Provides choice for setting.
  */
-interface SettingInitializerInterface
+interface SettingChoicesProviderInterface
 {
     /**
      * Specification:
-     * - Gives possibility to do additional action during init setting.
+     * - Gives possibility to show custom select choice.
      *
      * @api
      *
      * @param \SprykerSdk\SdkContracts\Entity\SettingInterface $setting
      *
-     * @return void
+     * @return array<string>
      */
-    public function initialize(SettingInterface $setting): void;
+    public function getChoices(SettingInterface $setting): array;
 }
