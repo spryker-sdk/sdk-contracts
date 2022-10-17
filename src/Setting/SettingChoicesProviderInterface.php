@@ -5,7 +5,7 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace src\Setting;
+namespace SprykerSdk\SdkContracts\Setting;
 
 use SprykerSdk\SdkContracts\Entity\SettingInterface;
 
@@ -16,7 +16,7 @@ interface SettingChoicesProviderInterface
 {
     /**
      * Specification:
-     * - Gives possibility to show custom select choice.
+     * - Gives possibility to show custom select choice during init setting.
      *
      * @api
      *
