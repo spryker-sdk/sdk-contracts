@@ -25,4 +25,14 @@ interface SettingInitializerInterface
      * @return void
      */
     public function initialize(SettingInterface $setting): void;
+
+    /**
+     * Specification:
+     * - Defines the initializer name to use in configuration files.
+     *
+     * @api
+     *
+     * @return string
+     */
+    public static function getName(): string;
 }
