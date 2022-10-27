@@ -34,6 +34,18 @@ interface WorkflowInterface
 
     /**
      * Specification:
+     * - Sets workflow transaction statuses.
+     *
+     * @api
+     *
+     * @param array $statuses
+     *
+     * @return void
+     */
+    public function setStatus(array $statuses): void;
+
+    /**
+     * Specification:
      * - Returns workflow name.
      *
      * @api
