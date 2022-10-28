@@ -25,4 +25,14 @@ interface SettingChoicesProviderInterface
      * @return array<string>
      */
     public function getChoices(SettingInterface $setting): array;
+
+    /**
+     * Specification:
+     * - Defines choice provider name
+     *
+     * @api
+     *
+     * @return string
+     */
+    public static function getName(): string;
 }
