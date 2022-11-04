@@ -119,5 +119,5 @@ final class Setting
      *
      * @var string
      */
-    public const EXECUTION_ENV = 'execution_env';
+    public const PATH_EXECUTION_ENV = 'execution_env';
 }
