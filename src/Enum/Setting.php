@@ -115,9 +115,9 @@ final class Setting
     public const PATH_DEVELOPER_EMAIL = 'developer_email';
 
     /**
-     * Path setting key for developer github account.
+     * Execution environment.
      *
      * @var string
      */
-    public const PATH_DEVELOPER_GITHUB_ACCOUNT = 'developer_github_account';
+    public const EXECUTION_ENV = 'execution_env';
 }

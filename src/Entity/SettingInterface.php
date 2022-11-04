@@ -111,6 +111,17 @@ interface SettingInterface
 
     /**
      * Specification:
+     * - Returns `true` if a value should be set by a user in any case.
+     * - Returns `false` for default behavior.
+     *
+     * @api
+     *
+     * @return bool
+     */
+    public function isForceAskValue(): bool;
+
+    /**
+     * Specification:
      * - Returns an initializer description.
      *
      * @api
