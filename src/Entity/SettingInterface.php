@@ -161,15 +161,4 @@ interface SettingInterface
      * @return bool
      */
     public function isShared(): bool;
-
-    /**
-     * Specification:
-     * - Returns `true` if it just created.
-     * - Returns `false` if it already has existed.
-     *
-     * @api
-     *
-     * @return bool
-     */
-    public function isFirstInitialization(): bool;
 }
