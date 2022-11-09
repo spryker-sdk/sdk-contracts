@@ -167,6 +167,8 @@ interface SettingInterface
      * - Returns `true` if it just created.
      * - Returns `false` if it already has existed.
      *
+     * @api
+     *
      * @return bool
      */
     public function isFirstInitialization(): bool;
