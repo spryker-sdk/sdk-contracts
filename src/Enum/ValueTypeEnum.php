@@ -7,7 +7,7 @@
 
 namespace SprykerSdk\SdkContracts\Enum;
 
-final class ValueTypeEnum
+class ValueTypeEnum
 {
     /**
      * @var string
@@ -40,8 +40,7 @@ final class ValueTypeEnum
     public const TYPE_UUID = 'uuid';
 
     /**
-     * Specification:
-     * - Returns all value types.
+     * {@inheritDoc}
      *
      * @api
      *
