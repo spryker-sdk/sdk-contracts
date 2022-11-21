@@ -14,7 +14,7 @@ final class ExecutionEnv
      *
      * @var string
      */
-    public const DEVELOPER = 'developer';
+    public const DEVELOPMENT = 'development';
 
     /**
      * CI execution environment name.
