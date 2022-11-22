@@ -114,6 +114,16 @@ final class Setting
      */
     public const PATH_DEVELOPER_EMAIL = 'developer_email';
 
+
+    /**
+     * @deprecated Replaced by the Setting::PATH_EXECUTION_ENV. Will be removed with the future major release.
+     *
+     * Path setting key for developer github account.
+     *
+     * @var string
+     */
+    public const PATH_DEVELOPER_GITHUB_ACCOUNT = 'developer_github_account';
+
     /**
      * Execution environment.
      *
