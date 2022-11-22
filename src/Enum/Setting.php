@@ -114,7 +114,6 @@ final class Setting
      */
     public const PATH_DEVELOPER_EMAIL = 'developer_email';
 
-
     /**
      * @deprecated Replaced by the Setting::PATH_EXECUTION_ENV. Will be removed with the future major release.
      *
