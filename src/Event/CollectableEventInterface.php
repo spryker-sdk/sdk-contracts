@@ -14,6 +14,16 @@ interface CollectableEventInterface
 {
     /**
      * Specification:
+     *  - Defines the event name.
+     *
+     * @api
+     *
+     * @return string
+     */
+    public function getName(): string;
+
+    /**
+     * Specification:
      * - Defines the event payload.
      *
      * @api
