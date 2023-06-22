@@ -10,7 +10,7 @@ namespace SprykerSdk\SdkContracts\Event;
 /**
  * Provides collectable event.
  */
-interface CollectableEventInterface
+interface MetricEventInterface
 {
     /**
      * Specification:
