@@ -48,11 +48,11 @@ jobs:
         run: composer --version
 
       - name: Composer install
-        if: ${{ matrix.php-version != '7.4' }}
+        if: ${{ matrix.php-version != '8.0' }}
         run: composer install
 
       - name: Composer install
-        if: ${{ matrix.php-version == '7.4' }}
+        if: ${{ matrix.php-version == '8.0' }}
         run: composer update --prefer-lowest
 
       - name: Run PHPStan
